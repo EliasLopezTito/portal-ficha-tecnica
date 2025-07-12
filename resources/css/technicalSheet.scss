@@ -1,0 +1,133 @@
+@import "lightgallery/css/lightgallery.css";
+@import "lightgallery/css/lg-thumbnail.css";
+@import "lightgallery/css/lg-zoom.css";
+@import "quill/dist/quill.snow.css";
+@import "./panel/scss/styles";
+/*----------------------------------------------
+# Carrusel
+----------------------------------------------*/
+
+.container-technicalSheet {
+    margin: auto;
+    max-width: 2000px;
+    padding: 53px 20px;
+}
+
+.lightGallery-property-images {
+    height: 600px;
+}
+
+.lightGallery-property-images__image-feature {
+    height: 600px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.lightGallery-property-images__image-resource {
+    height: calc(600px / 2) - 8px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.property-images__info {
+    background: #ecf2ff;
+}
+
+@media (max-width: 1920px) {
+    .container-technicalSheet {
+        padding: 53px 40px;
+    }
+
+    .lightGallery-property-images {
+        height: 500px;
+    }
+
+    .lightGallery-property-images__image-feature {
+        height: 500px;
+    }
+
+    .lightGallery-property-images__image-resource {
+        height: calc(500px / 2) - 8px;
+    }
+}
+
+@media (max-width: 1650px) {
+    .container-technicalSheet {
+        padding: 53px 40px 0;
+    }
+
+    .lightGallery-property-images {
+        height: 450px;
+    }
+
+    .lightGallery-property-images__image-feature {
+        height: 450px;
+    }
+
+    .lightGallery-property-images__image-resource {
+        height: calc(450px / 2) - 8px;
+    }
+}
+
+@media (max-width: 1400px) {
+    .container-technicalSheet {
+        padding: 53px 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container-technicalSheet {
+        padding: 53px 24px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .round {
+        width: 30px;
+        height: 30px;
+    }
+    .round i {
+        font-size: 18px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .container-technicalSheet {
+        padding: 24px 16px 0;
+    }
+}
+
+@media (max-width: 425px) {
+}
+
+/*----------------------------------------------
+# Quill - Description
+----------------------------------------------*/
+/* Quitar el borde del editor de Quill */
+.ql-container {
+    border: none !important;
+    font-family: var(--poppins) !important;
+    height: auto !important;
+}
+
+/* Cambiar la tipografía del contenido del editor de Quill */
+.ql-editor {
+    font-family: var(--poppins) !important;
+    font-size: 14px !important;
+    color: #808080 !important;
+    line-height: 1.5 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.ql-editor p span {
+    color: #808080 !important;
+}
+
+/* Otros estilos personalizados */
+.ql-editor p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
